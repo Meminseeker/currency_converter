@@ -42,6 +42,6 @@ else:
 if operation == '1':
     print("1 " + currency_codes.get_symbol(base_cur) + " = " + str(c.get_rate(base_cur, dest_cur)) + " " + currency_codes.get_symbol(dest_cur))
 elif operation == '2':
-    print("Enter your money amount as an integer (e.g. 10, 132, etc.): ")
+    print("Enter your money amount as an integer (e.g. 10, 132, etc.): ", end="")
     amount = int(input())
     print(str(amount) + " " + currency_codes.get_symbol(base_cur) + " = " + str(c.convert(base_cur, dest_cur, amount)) + " " + currency_codes.get_symbol(dest_cur))
